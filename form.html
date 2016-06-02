@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__logo">
+        <img src="http://placehold.it/86x35">
+      </div>
+      <nav class="main-nav  main-nav--closed">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="#catalog">Каталог товаров</a></li>
+          <li class="main-nav__item"><a href="#knitting-order">Вязание на заказ</a></li>
+          <li class="main-nav__item  main-nav__item--search"><a href="#search">Поиск по сайту</a></li>
+          <li class="main-nav__item  main-nav__item--basket"><a href="#basket">Корзина: пока пуста</a></li>
+        </ul>
+      </nav>
+    <h1 class="page-title__title">Вязание на заказ</h1>
+  </header>
+    <main class="page-main">
+      <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <form class="form">
+        <fieldset class="form__group">
+          <legend class="form__group-title">Тип</legend>
+          
+          <div class="form__field">
+            <input type="radio" name="type" id="type-field" class="form__input  form__input--radio" checked>
+            <label for="type-field" class="form__field-name">Аксессуар для интерьера</label>
+          </div>
+          <div>            
+            <input type="radio" name="type" id="toy-field" class="form__input  form__input--radio">
+            <label for="toy-field" class="form__field-name">Детская игрушка</label>
+          </div>
+        </fieldset>
+        <fieldset class="form__group">
+          <legend class="form__group-title">Цвет</legend>
+          
+          <div class="form__field">
+            <input type="checkbox" name="color-white" id="color-white-field" class="form__input  form__input--checkbox" checked>
+            <label for="color-white-field" class="form__field-name">Белый</label>
+          </div>
+          <div class="form__field">
+            <input type="checkbox" name="color-grey" id="color-grey-field" class="form__input  form__input--checkbox" checked>
+            <label for="color-grey-field" class="form__field-name">Серый</label>
+          </div>
+          <div class="form__field">
+            <input type="checkbox" name="color-tiffany" id="color-tiffany-field" class="form__input  form__input--checkbox">
+            <label for="color-tiffany-field" class="form__field-name">&laquo;Тиффани&raquo;</label>
+          </div>
+          <div class="form__field">
+            <input type="checkbox" name="color-black" id="color-black-field" class="form__input  form__input--checkbox">
+            <label for="color-black-field" class="form__field-name">Черный</label>
+          </div>
+          <div class="form__field">
+            <input type="checkbox" name="color-pink" id="color-pink-field" class="form__input  form__input--checkbox">
+            <label for="color-pink-field" class="form__field-name">Розовый</label>
+          </div>
+          <div class="form__field">
+            <input type="checkbox" name="color-orange" id="color-orange-field" class="form__input  form__input--checkbox">
+            <label for="color-orange-field" class="form__field-name">Оранжевый</label>
+          </div>
+        </fieldset>
+        <fieldset class="form__group">
+          <legend class="form__group-title">ФИО</legend>
+          
+          <div class="form__field">
+            <label for="surname-field" class="form__field-name">Фамилия:</label>
+            <input type="text" name="surname" id="surname-field" class="form__input  form__input--text" placeholder="Укажите фамилию" max="30" min="2">
+          </div>
+          <div class="form__field">
+            <label for="name-field" class="form__field-name">Имя:</label>
+            <input type="text" name="name" id="name-field" class="form__input  form__input--text" placeholder="Введите ваше имя" max="30" min="2">
+          </div>
+          <div class="form__field">
+            <label for="patronymic-field" class="form__field-name">Отчество:</label>
+            <input type="text" name="patronymic" id="patronymic-field" class="form__input  form__input--text" placeholder="Отчество, если желаете" max="30" min="2">
+          </div>
+        </fieldset>        
+        <fieldset class="form__group">
+          <legend class="form__group-title">Тел</legend>
+          
+          <div class="form__field">
+            <input type="text" name="phone" class="form__input  form__input--number" placeholder="+7 XXX XX XX" max="12">
+          </div>
+        </fieldset>        
+        <fieldset class="form__group">
+          <legend class="form__group-title">E-mail</legend>
+          <div class="form__field  form__field--email">
+            <input type="email" name="email" class="form__input  form__input--text" placeholder="Ваш e-mail" max="30">
+          </div>
+        </fieldset>        
+        <fieldset class="form__group">
+          <legend class="form__group-title">Доп</legend>
+          
+          <div class="form__field  form__field--suggest">
+            <textarea rows="6" placeholder="Опишите все вши пожелания к заказу" max="250" name="suggest" class="form__textarea"></textarea>
+          </div>
+        </fieldset>
+
+        <input type="submit" name="form__btn" value="Отправить заказ" class="btn">
+      </form>
+    </main>
+    <footer class="page-footer">
+      <section class="page-footer__social">       
+        <div class="social-links">
+          <a class="social-link  social-link--in" href="#">Мы в Инстаграме</a>
+          <a class="social-link  social-link--fb" href="#">Мы в Фейсбуке</a>
+          <a class="social-link  social-link--tw" href="#">Мы в Твиттере</a>
+        </div>
+      </section>
+    <section class="page-footer__copyright">
+      Разработано <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
+    </section>
+    </footer>
+  </body>
+</html>
