@@ -14,8 +14,8 @@
         <ul class="main-nav__list">
           <li class="main-nav__item"><a href="#catalog">Каталог товаров</a></li>
           <li class="main-nav__item"><a href="#knitting-order">Вязание на заказ</a></li>
-          <li class="main-nav__item"><a href="#search">Поиск по сайту</a></li>
-          <li class="main-nav__item"><a href="#basket">Корзина: пока пуста</a></li>
+          <li class="main-nav__item  main-nav__item--search"><a href="#search">Поиск по сайту</a></li>
+          <li class="main-nav__item  main-nav__item--basket"><a href="#basket">Корзина: пока пуста</a></li>
         </ul>
       </nav>
     <h1 class="page-title__title">Вязание на заказ</h1>
@@ -88,14 +88,14 @@
         </fieldset>        
         <fieldset class="form__group">
           <legend class="form__group-title">E-mail</legend>
-          <div class="form__field">
+          <div class="form__field  form__field--email">
             <input type="email" name="email" class="form__input  form__input--text" placeholder="Ваш e-mail" max="30">
           </div>
         </fieldset>        
         <fieldset class="form__group">
           <legend class="form__group-title">Доп</legend>
           
-          <div class="form__field">
+          <div class="form__field  form__field--suggest">
             <textarea rows="6" placeholder="Опишите все вши пожелания к заказу" max="250" name="suggest" class="form__textarea"></textarea>
           </div>
         </fieldset>
